@@ -1,10 +1,11 @@
 **free
-
 ctl-opt nomain;
 
-/COPY include,datamdl
+/COPY INCLUDE,DATAMDL
 
-/COPY include,httprtn
+/COPY INCLUDE,HTTPRTN
+
+/COPY INCLUDE,PSDS
 
 dcl-proc ADDBOOK;
   dcl-pi ADDBOOK end-pi;

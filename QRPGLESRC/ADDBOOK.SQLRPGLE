@@ -1,28 +1,28 @@
-000100241116**free
-000101241116
-000102241116ctl-opt nomain;
-000103241116
-000104241116/COPY include,datamdl
-000105241116
-000106241116/COPY include,httprtn
-000107241116
-000108241116dcl-proc ADDBOOK;
-000109241116  dcl-pi ADDBOOK end-pi;
-000110241116
-000111241116  monitor;
-000112241116
-000113241116  endmon;
-000114241116end-proc;
-000115241116
-000116241116dcl-proc methodGET;
-000117241116  dcl-pi *n ind;
-000118241116    ds_methodGET likeds(rtnCode_Template);
-000119241116  end-pi;
-000120241116
-000121241116  ds_methodGET.success=*off;
-000122241116  ds_methodGET.errorMsg='* Fail - method(GET) is Invalid';
-000123241116
-000124241116  return ds_methodGET.success;
-000125241116
-000126241116end-proc;
-000127241116
+**free
+
+ctl-opt nomain;
+
+/COPY include,datamdl
+
+/COPY include,httprtn
+
+dcl-proc ADDBOOK;
+  dcl-pi ADDBOOK end-pi;
+
+  monitor;
+
+  endmon;
+end-proc;
+
+dcl-proc methodGET;
+  dcl-pi *n ind;
+    ds_methodGET likeds(rtnCode_Template);
+  end-pi;
+
+  ds_methodGET.success=*off;
+  ds_methodGET.errorMsg='* Fail - method(GET) is Invalid';
+
+  return ds_methodGET.success;
+
+end-proc;
+

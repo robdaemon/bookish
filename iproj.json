@@ -1,0 +1,16 @@
+{
+    "description": "bookish",
+    "version": "1.0.0",
+    "license": "Apache 2.0",
+    "repository": "https://github.com/robdaemon/bookish.git",
+    "includePath": [
+        "INCLUDE"
+    ],
+    "objlib": "*CURLIB",
+    "curlib": "*CRTDFT",
+    "preUsrLibl": [],
+    "postUsrLibl": [],
+    "setIBMiEnvCmd": [],
+    "tgtCcsid": "*JOB",
+    "extensions": {}
+}
